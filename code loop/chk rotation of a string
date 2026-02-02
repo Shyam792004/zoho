@@ -1,0 +1,11 @@
+Scanner sc=new Scanner(System.in);
+        String s1=sc.next();
+        String s2=sc.next();
+        String str=s1+s1;
+        if(str.contains(s2))
+        {
+            System.out.print("it is rotated");
+        }
+        else{
+            System.out.print("no rotated");
+        }
