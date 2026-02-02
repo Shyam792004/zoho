@@ -41,9 +41,10 @@ class Main
                 matrix[i][j]=sc.nextInt();
             }
         }
-        
+
+
         int x=degree/90;
-        while(1<=x)
+        while(x>=1)
         {
         rotateMatrix(matrix);
         x--;
