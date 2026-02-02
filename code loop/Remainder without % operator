@@ -1,0 +1,10 @@
+
+
+         int m=sc.nextInt();
+         int n=sc.nextInt();
+         
+         int quotient=m/n;
+         int val=quotient*n;
+         int answer= m- val;
+         
+         System.out.println(answer);
