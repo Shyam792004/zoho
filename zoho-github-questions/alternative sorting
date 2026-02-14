@@ -1,0 +1,35 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		int n=sc.nextInt();
+		int [] arr=new int[n];
+		for(int i=0;i<n;i++)
+		{
+		    arr[i]=sc.nextInt();
+		}
+		Arrays.sort(arr);
+		
+		int i=0;
+		int j=n-1;
+		
+		ArrayList<Integer>alist=new ArrayList<>();
+	   while(i<j)
+	   {
+	       alist.add(arr[j--]);
+	       alist.add(arr[i++]);
+	   }
+	   if(n%2!=0)
+	   {
+	       alist.add(arr[i]);
+	   }
+	   for(int x:alist)
+	   {
+	       System.out.print(x+" ");
+	   }
+	}
+}
