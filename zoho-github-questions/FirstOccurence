@@ -1,0 +1,29 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String []args)
+    {
+        Scanner s=new Scanner(System.in);
+        String s1="ZOHOCORPORATION";
+        String s2="PORT";
+        
+        int n=s1.length();
+        int min=Integer.MAX_VALUE;
+        int max=Integer.MIN_VALUE;
+        
+        for(int i=0;i<s2.length();i++)
+        {
+            int val=s1.indexOf(s2.charAt(i));
+            if(val<=min)
+            {
+                min=val;
+            }
+            if(val>=max)
+            {
+                max=val;
+            }
+        }
+        System.out.print(s1.substring(min,max+1));
+        
+    }
+}
